@@ -19,8 +19,9 @@ article{
 
 body > header {
     background-color: skyblue;
-    margin-left: 20%;
     margin-bottom: 1em;
+    float:left;
+    width: 79%;
 }
 
 main > article > header{
@@ -28,25 +29,22 @@ main > article > header{
 }
 
 main{
-    margin-left: 20%;
-    margin-bottom: 110px;
+    float:left;
+    width: 79%;
 }
 
 nav{
-    width: 20%;
-    position:absolute;
-    height: 600px;
-    left: 0;
-    top: 0;
-    background-color:rgb(27, 58, 70);
+       background-color:rgb(27, 58, 70);
     padding: 1em;
+    float:left;
+    width: 20%;
+    height: 600px;
+    margin-right: 1%;
 }
 
 footer{
     background-color: rgb(13, 41, 52);
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-    left: 0;
+    width: 100%;    
     text-align:center;
+    clear:both;
 }
