@@ -19,9 +19,8 @@ article{
 
 body > header {
     background-color: skyblue;
-    margin-bottom: 1em;
-    float:left;
-    width: 79%;
+    margin-bottom: 1em; 
+    width: 100%;
 }
 
 main > article > header{
@@ -29,17 +28,15 @@ main > article > header{
 }
 
 main{
-    float:left;
-    width: 79%;
+    width: 100%;
 }
 
 nav{
        background-color:rgb(27, 58, 70);
     padding: 1em;
-    float:left;
-    width: 20%;
-    height: 600px;
-    margin-right: 1%;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1em;
 }
 
 footer{
@@ -48,3 +45,58 @@ footer{
     text-align:center;
     clear:both;
 }
+
+/*Versión Tablet*/
+@media(min-width:720px){
+/*Aquí inician los estilos para la Tablet*/
+    body > header{
+        float: left;
+        width: 79%;
+        background-color: rgb(13, 148, 216);
+    }
+    nav{
+    float:left;
+    width: 20%;
+    height: 600px;
+    margin-right: 1%;
+    }
+
+main{
+    float:left;
+    width: 79%;
+}
+article{
+    background-color: rgb(29, 140, 196);
+}
+nav {
+    background-color:rgb(30, 110, 141);
+}
+    main > article > header{
+        background-color: rgb(25, 70, 88);
+    }
+    footer{
+        background-color: rgb(4, 50, 56);
+    }
+/*Aquí terminan los estilos para la Tablet*/
+}
+
+/*Versión laptop*/
+@media(min-width:1024px){
+    /*Aquí inician los estilos para laptop*/
+        body > header{
+            background-color: blue;
+        }
+    article{
+        background-color: rgb(84, 205, 165);
+    }
+    nav {
+        background-color:rgb(77, 176, 215);
+    }
+        main > article > header{
+            background-color: rgb(55, 190, 243);
+        }
+        footer{
+            background-color: beige;
+        }
+    /*Aquí terminan los estilos para laptop*/
+    }
